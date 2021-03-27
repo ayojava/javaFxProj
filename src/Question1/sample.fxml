@@ -1,0 +1,24 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.RadioButton?>
+<GridPane fx:controller="Question1.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <Label GridPane.rowIndex="0" GridPane.columnIndex="0" fx:id="firstNameLbl">First Name : </Label>
+    <TextField fx:id="firstNameTxt" GridPane.rowIndex="0" GridPane.columnIndex="1"></TextField>
+
+    <Label GridPane.rowIndex="1" GridPane.columnIndex="0" fx:id="middleNameLbl">Middle Name : </Label>
+    <TextField fx:id="middleNameTxt" GridPane.rowIndex="1" GridPane.columnIndex="1"></TextField>
+
+    <RadioButton GridPane.rowIndex="2" GridPane.columnIndex="0" fx:id="radioBtnLbl" onAction="#handleRadioButtonAction" ></RadioButton>
+    <Label GridPane.rowIndex="2" GridPane.columnIndex="1" fx:id="middleNamefld">Middle Name </Label>
+
+
+    <Label GridPane.rowIndex="3" GridPane.columnIndex="0" fx:id="lastNameLbl">Last Name : </Label>
+    <TextField fx:id="lastNameTxt" GridPane.rowIndex="3" GridPane.columnIndex="1"></TextField>
+
+    <Button fx:id="autoFillBtn" GridPane.columnIndex="1" GridPane.rowIndex="4" onAction="#handleAutoFillAction">Autofill</Button>
+</GridPane>

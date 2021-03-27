@@ -1,0 +1,27 @@
+/*
+This file can be freely used for educational purposes.
+However, you must use critical thinking 
+when using the file as an example.
+*/
+/* 
+    Created on : 25 Feb 2020, 15:50:35
+    Author     : Jaakko Hakulinen <jaakko.hakulinen at tuni.fi>
+*/
+#greetings-title {
+    -fx-font-size: 16pt;
+    -fx-font-family: "Monospace";
+    -fx-fill: #A0A0FF;
+    -fx-effect: innershadow( three-pass-box, rgba(0, 0, 0, 0.7), 6, 0.0, 0, 2);
+    
+}
+
+.button {
+    -fx-background-color: #606060;
+    -fx-text-fill: white;
+    -fx-padding: 15;
+    -fx-rotate: 15deg;
+}
+
+.button:hover {
+    -fx-background-color: #6060FF;        
+}

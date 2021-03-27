@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<VBox id="vbox" prefHeight="400" prefWidth="800"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="exercise2.No2Controller">
+    <MenuBar fx:id="menuBar" >
+        <menus>
+            <Menu text="File">
+                <items>
+                    <MenuItem text="New"/>
+                    <SeparatorMenuItem  />
+                    <MenuItem text="Exit"/>
+                </items>
+            </Menu>
+            <Menu text="Edit">
+                <items>
+                    <MenuItem text="Update" onAction="#handleUpdateAction"/>
+                </items>
+            </Menu>
+            <Menu text="Help">
+                <items>
+                    <MenuItem text="About" onAction="#handleAboutAction"/>
+                </items>
+            </Menu>
+        </menus>
+    </MenuBar>
+    <Text fx:id="headingTxt" text="Heading" style="-fx-font-size: 24"/>
+</VBox>
